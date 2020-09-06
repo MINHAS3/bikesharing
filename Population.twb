@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0801.1333                               -->
+<workbook original-version='18.1' source-build='2020.3.0 (20203.20.0801.1333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='des-moines-nyc' inline='true' name='federated.163u2mf17e8cgq176qepy1g970tr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='des-moines-nyc' name='textscan.0bonb2q0kr69l21fxtmhx0bjt3gm'>
+            <connection class='textscan' directory='C:/Users/minha/OneDrive/Documents/Bootcamp/BootCamp_1/Wk_14_Citibike_w_Tableau' filename='des-moines-nyc.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Des Moines city, Iowa]' />
+            <value name='[New York city, New York]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[des-moines-nyc.csv].[Des Moines city, Iowa]' />
+              <field name='[des-moines-nyc.csv].[New York city, New York]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0bonb2q0kr69l21fxtmhx0bjt3gm' name='des-moines-nyc.csv' table='[des-moines-nyc#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Fact' ordinal='0' />
+              <column datatype='string' name='New York city, New York' ordinal='1' />
+              <column datatype='string' name='Des Moines city, Iowa' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Des Moines city, Iowa]' />
+            <value name='[New York city, New York]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[des-moines-nyc.csv].[Des Moines city, Iowa]' />
+              <field name='[des-moines-nyc.csv].[New York city, New York]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0bonb2q0kr69l21fxtmhx0bjt3gm' name='des-moines-nyc.csv' table='[des-moines-nyc#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Fact' ordinal='0' />
+              <column datatype='string' name='New York city, New York' ordinal='1' />
+              <column datatype='string' name='Des Moines city, Iowa' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[des-moines-nyc.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fact]</local-name>
+            <parent-name>[des-moines-nyc.csv]</parent-name>
+            <remote-alias>Fact</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='des-moines-nyc.csv' datatype='table' name='[__tableau_internal_object_id__].[des-moines-nyc.csv_5FA6502A413F4BC7B138E4DC3E14B53D]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='des-moines-nyc.csv' id='des-moines-nyc.csv_5FA6502A413F4BC7B138E4DC3E14B53D'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Des Moines city, Iowa]' />
+                  <value name='[New York city, New York]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[des-moines-nyc.csv].[Des Moines city, Iowa]' />
+                    <field name='[des-moines-nyc.csv].[New York city, New York]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0bonb2q0kr69l21fxtmhx0bjt3gm' name='des-moines-nyc.csv' table='[des-moines-nyc#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='Fact' ordinal='0' />
+                    <column datatype='string' name='New York city, New York' ordinal='1' />
+                    <column datatype='string' name='Des Moines city, Iowa' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Population'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='des-moines-nyc' name='federated.163u2mf17e8cgq176qepy1g970tr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.163u2mf17e8cgq176qepy1g970tr'>
+            <column datatype='string' name='[Fact]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Fact]' derivation='None' name='[none:Fact:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.163u2mf17e8cgq176qepy1g970tr].[none:Fact:nk]'>
+            <groupfilter function='member' level='[none:Fact:nk]' member='&quot;Population estimates, July 1, 2019,  (V2019)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.163u2mf17e8cgq176qepy1g970tr].[none:Fact:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.163u2mf17e8cgq176qepy1g970tr].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.163u2mf17e8cgq176qepy1g970tr].[none:Pivot Field Names:nk]</cols>
+      </table>
+      <simple-id uuid='{415D23AD-4715-4A65-85C8-314E086D8E17}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C7D533BA-A5CD-4B95-87CF-721E74C6224D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Population'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.163u2mf17e8cgq176qepy1g970tr].[none:Fact:nk]</field>
+            <field>[federated.163u2mf17e8cgq176qepy1g970tr].[none:Pivot Field Names:nk]</field>
+            <field>[federated.163u2mf17e8cgq176qepy1g970tr].[none:Pivot Field Values:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AE847F9E-7B08-43F2-BF9D-3B9B0892F6EA}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BF34CD74-7C3D-4BD1-AD5D-F206B3124AD6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Population' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
